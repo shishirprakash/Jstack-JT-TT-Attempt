@@ -18,7 +18,7 @@ mkdir -m 777 -p ${TT_DIR}
 
 if [ `ps -ef | grep -w "collectJstack.sh daemon" | grep -v -w -e grep | tr -s '  ' ' ' | cut -f 2-3 -d " " | grep -v -w -e $$ | wc -l` -ne 0 ]; then
   echo ERROR: This script is already running!
-  ps -ef | grep -w "collectJstack.s daemon" | grep -v -w -e grep
+  ps -ef | grep -w "collectJstack.sh daemon" | grep -v -w -e grep
   exit 1
 fi
 
