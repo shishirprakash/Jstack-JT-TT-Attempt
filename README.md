@@ -1,6 +1,9 @@
 # Jstack-JT-TT-Attempt
 Use this script to collect Jstack  of JJ , TT or Attempt for a job.
 
+Use "collectJstack.sh" to start jstack collection and "stopJstackcollect.sh" for stopping the collection. This will collect all require logs under /tmp/jstack
+
+# Important
 Jstack for attempt is controlled by "lightPollingInterval" and jstack for JT and TT is controlled by "heavyPollingInterval" .  Both the values are set in seconds.
 
 - lightPollingInterval=1 # every second
